@@ -14,7 +14,7 @@ const state = {
       gameVelocity: 1000,
       hitPosition: 0,
       result: 0,
-      curretTime: 2,
+      curretTime: 60,
   },
   actions: {
       timerId: null,
@@ -37,7 +37,7 @@ function countDown() {
 
   function newGame() {
     state.values.result = 0;
-    state.values.curretTime = 2;
+    state.values.curretTime = 60;
     state.view.timeLeft.textContent = state.values.curretTime;
     state.view.score.textContent = state.values.result;
   
