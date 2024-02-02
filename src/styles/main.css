@@ -1,0 +1,85 @@
+body {
+    background-image: url("../images/fundo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;    
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background-color: #1c60c7;
+    color: #fff;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.panel{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square{
+    height: 150px;
+    width: 150px;
+    border: 1px solid #ffffff;
+    background-color: rgba(30, 170, 116, 0.644);
+}
+
+.enemy{
+    background-image: url("../images/marmota.png");
+    background-size: cover;
+}
+
+.menu-score h2:nth-child(2), .menu-time h2:nth-child(2){
+    margin-top: 1rem;
+}
+
+
+.modal-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+  
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    max-width: 40%;
+    max-height: 50%;
+    overflow: auto;
+
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+  
+#reset {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
